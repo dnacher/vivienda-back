@@ -21,6 +21,8 @@ public class Concepto {
 
     public Concepto(){}
 
+
+
     public Integer getId() {
         return id;
     }
@@ -45,7 +47,7 @@ public class Concepto {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

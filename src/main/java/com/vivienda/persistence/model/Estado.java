@@ -60,7 +60,7 @@ public class Estado {
         this.orden = orden;
     }
 
-    public boolean isUltimoEstado() {
+    public boolean getUltimoEstado() {
         return ultimoEstado;
     }
 
@@ -68,7 +68,7 @@ public class Estado {
         this.ultimoEstado = ultimoEstado;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 
