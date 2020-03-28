@@ -1,7 +1,7 @@
 package com.vivienda.persistence.repository;
 
+import com.vivienda.persistence.model.HistorialTrabajo;
 import org.springframework.data.repository.CrudRepository;
-import persistence.entities.HistorialTrabajo;
 
 public interface HistorialTrabajoRepository extends CrudRepository<HistorialTrabajo,Integer> {
 }

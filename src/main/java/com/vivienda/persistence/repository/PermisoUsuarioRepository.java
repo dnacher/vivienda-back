@@ -9,4 +9,5 @@ import java.util.List;
 public interface PermisoUsuarioRepository extends CrudRepository<PermisoUsuario,Integer> {
 
     List<PermisoUsuario> getAllByTipoUsuario(TipoUsuario tipoUsuario);
+    void deleteByTipoUsuario(TipoUsuario tipoUsuario);
 }
