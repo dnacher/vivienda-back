@@ -2,10 +2,17 @@ package com.vivienda.domain.mappers;
 
 import com.vivienda.api.dto.GastosComunesDTO;
 import com.vivienda.persistence.model.GastosComunes;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GastosComunesMapper implements AbstractMapper<GastosComunes, GastosComunesDTO>{
+
+    @Autowired
+    private MontoMapper montoMapper;
+
+    @Autowired
+    private UnidadMapper unidadMapper;
 
     @Override
     public GastosComunes mapToEntity(GastosComunesDTO dto) {
@@ -17,9 +24,9 @@ public class GastosComunesMapper implements AbstractMapper<GastosComunes, Gastos
         gastosComunes.setDescuento(dto.getDescuento());
         gastosComunes.setEstado(dto.getEstado());
         gastosComunes.setFechaPago(dto.getFechaPago());
-        gastosComunes.setMonto(dto.getMonto());
+        gastosComunes.setMonto(montoMapper.mapToEntity(dto.getMonto()));
         gastosComunes.setPeriodo(dto.getPeriodo());
-        gastosComunes.setUnidad(dto.getUnidad());
+        gastosComunes.setUnidad(unidadMapper.mapToEntity(dto.getUnidad()));
         gastosComunes.setMonto_1(dto.getMonto_1());
         return gastosComunes;
     }
@@ -34,9 +41,9 @@ public class GastosComunesMapper implements AbstractMapper<GastosComunes, Gastos
         gastosComunes.setDescuento(entity.getDescuento());
         gastosComunes.setEstado(entity.getEstado());
         gastosComunes.setFechaPago(entity.getFechaPago());
-        gastosComunes.setMonto(entity.getMonto());
+        gastosComunes.setMonto(montoMapper.mapToDTO(entity.getMonto()));
         gastosComunes.setPeriodo(entity.getPeriodo());
-        gastosComunes.setUnidad(entity.getUnidad());
+        gastosComunes.setUnidad(unidadMapper.mapToDTO(entity.getUnidad()));
         gastosComunes.setMonto_1(entity.getMonto_1());
         return gastosComunes;
     }
