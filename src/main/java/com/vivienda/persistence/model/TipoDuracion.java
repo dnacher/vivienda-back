@@ -37,7 +37,7 @@ public class TipoDuracion {
         this.nombre = nombre;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

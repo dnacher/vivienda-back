@@ -115,7 +115,7 @@ public class OtrosGastos {
         this.pago = pago;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

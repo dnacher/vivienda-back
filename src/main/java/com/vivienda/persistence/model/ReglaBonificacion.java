@@ -90,7 +90,7 @@ public class ReglaBonificacion {
         this.habitaciones = habitaciones;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

@@ -78,7 +78,7 @@ public class Material {
         this.salida = salida;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

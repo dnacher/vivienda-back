@@ -85,7 +85,7 @@ public class Usuario {
         this.salt = salt;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

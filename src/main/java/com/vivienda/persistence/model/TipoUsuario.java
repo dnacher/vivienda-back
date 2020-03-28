@@ -21,7 +21,7 @@ public class TipoUsuario {
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "permiso_usuario")
-    private PermisoUsuario permisosusuarios;
+    private PermisoUsuario permisoUsuario;
 
     public TipoUsuario(){}
    
@@ -51,7 +51,7 @@ public class TipoUsuario {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 
@@ -59,12 +59,12 @@ public class TipoUsuario {
         this.activo = activo;
     }
 
-    public PermisoUsuario getPermisosusuarios() {
-        return permisosusuarios;
+    public PermisoUsuario getPermisoUsuario() {
+        return permisoUsuario;
     }
 
-    public void setPermisosusuarios(PermisoUsuario permisosusuarios) {
-        this.permisosusuarios = permisosusuarios;
+    public void setPermisoUsuario(PermisoUsuario permisoUsuario) {
+        this.permisoUsuario = permisoUsuario;
     }
 
 
