@@ -1,8 +1,8 @@
 package com.vivienda.persistence.dao;
 
+import com.vivienda.persistence.model.ListaPrecio;
+import com.vivienda.persistence.repository.ListaPrecioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import persistence.entities.ListaPrecio;
-import persistence.repository.ListaPrecioRepository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class ListaPrecioDAO {
     @Autowired
     public ListaPrecioRepository repository;
 
-    public List<ListaPrecio> getHistorialTrabajos(){
+    public List<ListaPrecio> getListaPrecio(){
         List<ListaPrecio> listaPrecios = new ArrayList<>();
         repository.findAll().forEach(listaPrecio -> {
             listaPrecios.add(listaPrecio);

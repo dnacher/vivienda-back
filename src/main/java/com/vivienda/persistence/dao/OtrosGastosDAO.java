@@ -25,7 +25,7 @@ public class OtrosGastosDAO {
         return repository.save(otrosGastos);
     }
 
-    public OtrosGastos updateMonto(OtrosGastos otrosGastos) throws Exception{
+    public OtrosGastos updateOtrosGastos(OtrosGastos otrosGastos) throws Exception{
         if(otrosGastos!=null && otrosGastos.getId()!=null){
             return repository.save(otrosGastos);
         }else{

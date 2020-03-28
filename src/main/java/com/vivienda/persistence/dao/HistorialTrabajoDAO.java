@@ -1,8 +1,8 @@
 package com.vivienda.persistence.dao;
 
+import com.vivienda.persistence.model.HistorialTrabajo;
+import com.vivienda.persistence.repository.HistorialTrabajoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import persistence.entities.HistorialTrabajo;
-import persistence.repository.HistorialTrabajoRepository;
 
 import java.util.ArrayList;
 import java.util.List;

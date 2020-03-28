@@ -1,9 +1,9 @@
 package com.vivienda.persistence.dao;
 
 
+import com.vivienda.persistence.model.Material;
+import com.vivienda.persistence.repository.MaterialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import persistence.entities.Material;
-import persistence.repository.MaterialRepository;
 
 import java.util.ArrayList;
 import java.util.List;

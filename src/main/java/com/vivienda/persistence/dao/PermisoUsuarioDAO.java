@@ -44,6 +44,10 @@ public class PermisoUsuarioDAO {
         repository.deleteById(id);
     }
 
+    public void deletePermisoUsuarioByTipoUsuario(TipoUsuario tipoUsuario){
+        repository.deleteByTipoUsuario(tipoUsuario);
+    }
+
     public PermisoUsuario getPermisoUsuarioById(Integer id){
         return repository.findById(id).get();
     }

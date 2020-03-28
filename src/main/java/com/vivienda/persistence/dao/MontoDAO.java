@@ -1,9 +1,9 @@
 package com.vivienda.persistence.dao;
 
 
+import com.vivienda.persistence.model.Monto;
+import com.vivienda.persistence.repository.MontoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import persistence.entities.Monto;
-import persistence.repository.MontoRepository;
 
 import java.util.ArrayList;
 import java.util.List;

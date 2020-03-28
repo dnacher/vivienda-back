@@ -30,7 +30,7 @@ public class UsuarioDAO {
         return repository.save(usuario);
     }
 
-    public Usuario updatUsuario(Usuario usuario) throws Exception{
+    public Usuario updateUsuario(Usuario usuario) throws Exception{
         if(usuario!=null && usuario.getId()!=null){
             return repository.save(usuario);
         }else{

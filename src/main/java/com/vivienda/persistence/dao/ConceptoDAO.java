@@ -1,5 +1,6 @@
 package com.vivienda.persistence.dao;
 
+import com.vivienda.exception.ServiceException;
 import com.vivienda.persistence.model.Concepto;
 import com.vivienda.persistence.repository.ConceptoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,11 +29,11 @@ public class ConceptoDAO {
         return repository.save(concepto);
     }
 
-    public Concepto updateConcepto(Concepto concepto) throws Exception{
+    public Concepto updateConcepto(Concepto concepto) throws ServiceException {
         if(concepto!=null && concepto.getId()!=null){
             return repository.save(concepto);
         }else{
-            throw new Exception("el id no puede estar vacio");
+            throw new ServiceException("el id no puede estar vacio");
         }
     }
 
