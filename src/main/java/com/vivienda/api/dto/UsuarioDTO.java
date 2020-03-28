@@ -24,11 +24,11 @@ public class UsuarioDTO {
         this.id = id;
     }
 
-    public TipoUsuarioDTO getTipousuario() {
+    public TipoUsuarioDTO getTipoUsuario() {
         return tipoUsuario;
     }
 
-    public void setTipousuario(TipoUsuarioDTO tipoUsuario) {
+    public void setTipoUsuario(TipoUsuarioDTO tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
     }
 
@@ -64,7 +64,7 @@ public class UsuarioDTO {
         this.salt = salt;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

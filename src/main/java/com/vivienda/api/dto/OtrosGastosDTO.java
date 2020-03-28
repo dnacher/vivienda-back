@@ -89,7 +89,7 @@ public class OtrosGastosDTO {
         this.pago = pago;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

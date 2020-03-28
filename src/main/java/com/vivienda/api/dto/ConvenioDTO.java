@@ -4,7 +4,7 @@ public class ConvenioDTO {
 
     private Integer id;
     private MontoDTO monto;
-    private ReglaBonificacionDTO reglabonificacion;
+    private ReglaBonificacionDTO reglaBonificacion;
     private UnidadDTO unidad;
     private Integer deudaTotal;
     private Integer cuotas;
@@ -30,12 +30,12 @@ public class ConvenioDTO {
         this.monto = monto;
     }
 
-    public ReglaBonificacionDTO getReglabonificacion() {
-        return reglabonificacion;
+    public ReglaBonificacionDTO getReglaBonificacion() {
+        return reglaBonificacion;
     }
 
-    public void setReglabonificacion(ReglaBonificacionDTO reglabonificacion) {
-        this.reglabonificacion = reglabonificacion;
+    public void setReglaBonificacion(ReglaBonificacionDTO reglaBonificacion) {
+        this.reglaBonificacion = reglaBonificacion;
     }
 
     public UnidadDTO getUnidad() {

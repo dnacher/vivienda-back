@@ -60,7 +60,7 @@ public class MaterialDTO {
         this.salida = salida;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 

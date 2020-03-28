@@ -1,11 +1,14 @@
 package com.vivienda.api.dto;
 
+import com.vivienda.persistence.model.PermisoUsuario;
+
 public class TipoDuracionDTO {
 
     private Integer id;
     private String nombre;
     private boolean activo;
     private String descripcion;
+    private PermisoUsuario permisoUsuario;
 
     public TipoDuracionDTO(){}
 
@@ -25,7 +28,7 @@ public class TipoDuracionDTO {
         this.nombre = nombre;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 
@@ -39,5 +42,17 @@ public class TipoDuracionDTO {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public PermisoUsuario getPermisoUsuario() {
+        return permisoUsuario;
+    }
+
+    public void setPermisoUsuario(PermisoUsuario permisoUsuario) {
+        this.permisoUsuario = permisoUsuario;
     }
 }

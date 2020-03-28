@@ -6,7 +6,7 @@ public class TipoUsuarioDTO {
     private String nombre;
     private String descripcion;
     private boolean activo;
-    private PermisoUsuarioDTO permisosusuarios;
+    private PermisoUsuarioDTO permisoUsuario;
 
     public TipoUsuarioDTO(){}
 
@@ -36,7 +36,7 @@ public class TipoUsuarioDTO {
         this.descripcion = descripcion;
     }
 
-    public boolean isActivo() {
+    public boolean getActivo() {
         return activo;
     }
 
@@ -44,12 +44,12 @@ public class TipoUsuarioDTO {
         this.activo = activo;
     }
 
-    public PermisoUsuarioDTO getPermisosusuarios() {
-        return permisosusuarios;
+    public PermisoUsuarioDTO getPermisoUsuario() {
+        return permisoUsuario;
     }
 
-    public void setPermisosusuarios(PermisoUsuarioDTO permisosusuarios) {
-        this.permisosusuarios = permisosusuarios;
+    public void setPermisoUsuario(PermisoUsuarioDTO permisoUsuario) {
+        this.permisoUsuario = permisoUsuario;
     }
 
 
