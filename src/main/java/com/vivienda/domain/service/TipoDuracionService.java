@@ -42,9 +42,9 @@ public class TipoDuracionService {
         }
     }
 
-    public List<TipoDuracionDTO> getTipoDuracions(){
-        List<TipoDuracion> TipoDuracions = this.tipoDuracionDAO.getTipoDuracion();
-        return TipoDuracions.stream().map(tipoDuracion -> this.tipoDuracionMapper.mapToDTO(tipoDuracion)).collect(Collectors.toList());
+    public List<TipoDuracionDTO> getTipoDuraciones(){
+        List<TipoDuracion> TipoDuraciones = this.tipoDuracionDAO.getTipoDuracion();
+        return TipoDuraciones.stream().map(tipoDuracion -> this.tipoDuracionMapper.mapToDTO(tipoDuracion)).collect(Collectors.toList());
     }
 
     public TipoDuracionDTO getTipoDuracionById(Integer id) throws ServiceException{
