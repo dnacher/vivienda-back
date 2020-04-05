@@ -1,5 +1,9 @@
 package com.vivienda.persistence.dao;
 
+import org.springframework.stereotype.Component;
+
+import javax.transaction.Transactional;
+
 public class MaterialTrabajo {
 
 

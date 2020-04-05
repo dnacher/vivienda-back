@@ -3,10 +3,14 @@ package com.vivienda.persistence.dao;
 import com.vivienda.persistence.model.TipoDuracion;
 import com.vivienda.persistence.repository.TipoDuracionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+@Transactional
+@Component
 public class TipoDuracionDAO {
 
     @Autowired
