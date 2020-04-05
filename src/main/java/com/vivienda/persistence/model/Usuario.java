@@ -18,6 +18,9 @@ public class Usuario {
     @Column(name = "nombre")
     private String nombre;
 
+    @Transient
+    private String password;
+
     @Column(name = "password")
     private String hashedPassword;
 
@@ -57,6 +60,14 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getHashedPassword() {
