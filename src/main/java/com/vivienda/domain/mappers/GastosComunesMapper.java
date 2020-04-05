@@ -27,7 +27,7 @@ public class GastosComunesMapper implements AbstractMapper<GastosComunes, Gastos
         gastosComunes.setMonto(montoMapper.mapToEntity(dto.getMonto()));
         gastosComunes.setPeriodo(dto.getPeriodo());
         gastosComunes.setUnidad(unidadMapper.mapToEntity(dto.getUnidad()));
-        gastosComunes.setMonto_1(dto.getMonto_1());
+        gastosComunes.setValor(dto.getMonto_1());
         return gastosComunes;
     }
 
@@ -44,7 +44,7 @@ public class GastosComunesMapper implements AbstractMapper<GastosComunes, Gastos
         gastosComunes.setMonto(montoMapper.mapToDTO(entity.getMonto()));
         gastosComunes.setPeriodo(entity.getPeriodo());
         gastosComunes.setUnidad(unidadMapper.mapToDTO(entity.getUnidad()));
-        gastosComunes.setMonto_1(entity.getMonto_1());
+        gastosComunes.setMonto_1(entity.getValor());
         return gastosComunes;
     }
 

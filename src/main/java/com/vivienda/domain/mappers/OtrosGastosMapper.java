@@ -26,7 +26,7 @@ public class OtrosGastosMapper implements AbstractMapper<OtrosGastos, OtrosGasto
         otrosGastos.setFecha(dto.getFecha());
         otrosGastos.setId(dto.getId());
         otrosGastos.setMonto(montoMapper.mapToEntity(dto.getMonto()));
-        otrosGastos.setMonto_1(dto.getMonto_1());
+        otrosGastos.setValor(dto.getMonto_1());
         otrosGastos.setPago(dto.getPago());
         otrosGastos.setSecuencia(dto.getSecuencia());
         otrosGastos.setUnidad(unidadMapper.mapToEntity(dto.getUnidad()));
@@ -42,7 +42,7 @@ public class OtrosGastosMapper implements AbstractMapper<OtrosGastos, OtrosGasto
         otrosGastos.setFecha(entity.getFecha());
         otrosGastos.setId(entity.getId());
         otrosGastos.setMonto(montoMapper.mapToDTO(entity.getMonto()));
-        otrosGastos.setMonto_1(entity.getMonto_1());
+        otrosGastos.setMonto_1(entity.getValor());
         otrosGastos.setPago(entity.getPago());
         otrosGastos.setSecuencia(entity.getSecuencia());
         otrosGastos.setUnidad(unidadMapper.mapToDTO(entity.getUnidad()));
