@@ -8,28 +8,29 @@ public class ReglaBonificacion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "dia_a_pagar")
     private Integer diaApagar;
 
-    @Column
+    @Column(name = "tipo_bonificacion")
     private Integer tipoBonificacion;
 
-    @Column
+    @Column(name = "valor")
     private Integer valor;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "monto")
     private Monto monto;
 
-    @Column
+    @Column(name = "habitaciones")
     private Integer habitaciones;
 
-    @Column
+    @Column(name = "activo")
     private boolean activo;
 
     public ReglaBonificacion(){}

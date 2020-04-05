@@ -9,6 +9,7 @@ public class OtrosGastos {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
@@ -23,22 +24,22 @@ public class OtrosGastos {
     @JoinColumn(name = "unidad")
     private Unidad unidad;
 
-    @Column
+    @Column(name = "secuencia")
     private Integer secuencia;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
-    private Integer monto_1;
+    @Column(name = "valor")
+    private Integer valor;
 
-    @Column
+    @Column(name = "fecha")
     private Date fecha;
 
-    @Column
+    @Column(name = "pago")
     private Boolean pago;
 
-    @Column
+    @Column(name = "activo")
     private boolean activo;
 
     public OtrosGastos(){}
@@ -91,12 +92,12 @@ public class OtrosGastos {
         this.descripcion = descripcion;
     }
 
-    public Integer getMonto_1() {
-        return monto_1;
+    public Integer getValor() {
+        return valor;
     }
 
-    public void setMonto_1(Integer monto_1) {
-        this.monto_1 = monto_1;
+    public void setValor(Integer monto_1) {
+        this.valor = monto_1;
     }
 
     public Date getFecha() {

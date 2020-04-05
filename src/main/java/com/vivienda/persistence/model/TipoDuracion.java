@@ -8,16 +8,17 @@ public class TipoDuracion {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
-    private boolean activo;
-
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
+
+    @Column(name = "activo")
+    private boolean activo;
 
     public TipoDuracion(){}
 

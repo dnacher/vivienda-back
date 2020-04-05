@@ -9,6 +9,7 @@ public class HistorialTrabajo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)

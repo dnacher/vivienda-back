@@ -20,19 +20,23 @@ public class CuotaConvenio {
     @JoinColumn(name = "monto")
     private Monto monto;
 
-    @Column
+    @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
+    @JoinColumn(name = "unidad")
+    private Unidad unidad;
+
+    @Column(name = "numero_cuota")
     private Integer numeroCuota;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "pago")
     private Integer pago;
 
-    @Column
+    @Column(name = "tiene_bonificacion")
     private Boolean tieneBonificacion;
 
-    @Column
+    @Column(name = "fecha_pago")
     private Date fechaPago;
 
     public CuotaConvenio(){}
@@ -99,5 +103,13 @@ public class CuotaConvenio {
 
     public void setFechaPago(Date fechaPago) {
         this.fechaPago = fechaPago;
+    }
+
+    public Unidad getUnidad() {
+        return unidad;
+    }
+
+    public void setUnidad(Unidad unidad) {
+        this.unidad = unidad;
     }
 }

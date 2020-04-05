@@ -9,24 +9,25 @@ public class Monto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "simbolo")
     private String simbolo;
 
-    @Column
+    @Column(name = "tipo_monto")
     private String tipoMonto;
 
-    @Column
+    @Column(name = "valor_pesos")
     private double valorPesos;
 
-    @Column
+    @Column(name = "fecha_actualizacion")
     private Date fechaActualizacion;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public Monto(){}

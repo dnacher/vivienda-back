@@ -19,28 +19,28 @@ public class GastosComunes {
     @JoinColumn(name = "unidad")
     private Unidad unidad;
 
-    @Column
-    private Integer monto_1;
+    @Column(name = "valor")
+    private Integer valor;
 
-    @Column
+    @Column(name = "is_bonificacion")
     private Boolean isBonificacion;
 
-    @Column
+    @Column(name = "descuento")
     private Integer descuento;
 
-    @Column
+    @Column(name = "estado")
     private Integer estado;
 
-    @Column
+    @Column(name = "fecha_pago")
     private Date fechaPago;
 
-    @Column
+    @Column(name = "periodo")
     private Integer periodo;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public GastosComunes(){}
@@ -69,12 +69,12 @@ public class GastosComunes {
         this.unidad = unidad;
     }
 
-    public Integer getMonto_1() {
-        return monto_1;
+    public Integer getValor() {
+        return valor;
     }
 
-    public void setMonto_1(Integer monto_1) {
-        this.monto_1 = monto_1;
+    public void setValor(Integer monto_1) {
+        this.valor = monto_1;
     }
 
     public Boolean getBonificacion() {

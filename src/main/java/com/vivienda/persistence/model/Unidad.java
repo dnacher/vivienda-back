@@ -9,42 +9,43 @@ public class Unidad {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "block")
     private String block;
 
-    @Column
+    @Column(name = "torre")
     private Integer torre;
 
-    @Column
+    @Column(name = "puerta")
     private Integer puerta;
 
-    @Column
+    @Column(name = "habitaciones")
     private Integer habitaciones;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
+    @Column(name = "apellido")
     private String apellido;
 
-    @Column
+    @Column(name = "telefono")
     private Integer telefono;
 
-    @Column
+    @Column(name = "mail")
     private String mail;
 
-    @Column
+    @Column(name = "propietario_inquilino")
     private Boolean propietarioInquilino;
 
-    @Column
+    @Column(name = "fecha_ingreso")
     private Date fechaIngreso;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
-    @Column
+    @Column(name = "es_edificio")
     private Boolean esEdificio;
 
     public Unidad(){}

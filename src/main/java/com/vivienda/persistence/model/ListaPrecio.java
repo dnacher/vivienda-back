@@ -9,22 +9,23 @@ public class ListaPrecio {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "material")
     private Material material;
 
-    @Column
+    @Column(name = "precio")
     private Integer precio;
 
-    @Column
+    @Column(name = "cantidad")
     private Integer cantidad;
 
-    @Column
+    @Column(name = "fecha")
     private Date fecha;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public ListaPrecio(){}

@@ -9,19 +9,20 @@ public class HistorialMonto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "monto")
     private Monto monto;
 
-    @Column
+    @Column(name = "fecha_actualizacion")
     private Date fechaActualizacion;
 
-    @Column
+    @Column(name = "valor_pesos")
     private Integer valorPesos;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public HistorialMonto(){}

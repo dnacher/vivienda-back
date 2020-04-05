@@ -31,25 +31,25 @@ public class Trabajo {
     @JoinColumn(name = "urgencia")
     private Urgencia urgencia;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "fecha_creacion")
     private Date fechaCreacion;
 
-    @Column
+    @Column(name = "fecha_visita")
     private Date fechaVisita;
 
-    @Column
+    @Column(name = "calificacion")
     private Integer calificacion;
 
-    @Column
+    @Column(name = "duracion_estimada")
     private Integer duracionEstimada;
 
-    @Column
+    @Column(name = "duracion_real")
     private Integer duracionReal;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public Trabajo(){}

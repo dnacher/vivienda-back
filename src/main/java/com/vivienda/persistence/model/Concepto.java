@@ -8,20 +8,19 @@ public class Concepto {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "activo")
     private boolean activo;
 
     public Concepto(){}
-
-
 
     public Integer getId() {
         return id;

@@ -22,19 +22,19 @@ public class Convenio {
     @JoinColumn(name = "unidad")
     private Unidad unidad;
 
-    @Column
+    @Column(name = "deuda_total")
     private Integer deudaTotal;
 
-    @Column
+    @Column(name = "cuotas")
     private Integer cuotas;
 
-    @Column
+    @Column(name = "saldo_inicial")
     private Integer saldoInicial;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public Convenio(){}

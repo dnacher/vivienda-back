@@ -11,19 +11,19 @@ public class Estado {
     @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column
+    @Column(name = "orden")
     private Integer orden;
 
-    @Column
+    @Column(name = "ultimo_estado")
     private boolean ultimoEstado;
 
-    @Column
+    @Column(name = "activo")
     private boolean activo;
 
     public Estado(){}

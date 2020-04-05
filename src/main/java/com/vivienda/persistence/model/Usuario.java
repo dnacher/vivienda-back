@@ -8,34 +8,32 @@ public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "tipo_usuario")
     private TipoUsuario tipoUsuario;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
-    private String password;
-
-    @Column
+    @Column(name = "password")
     private String hashedPassword;
 
-    @Column
+    @Column(name = "salt")
     private String salt;
 
-    @Column
+    @Column(name = "activo")
     private boolean activo;
 
-    @Column
+    @Transient
     private String nombreTipoUsuario;
 
     public Usuario() {
     }
 
-    // <editor-fold defaultstate="collapsed" desc="Getters and Setters">
+    // <editor-fold defaultstate="collapsed" desc="Getters and Setters ">
 
     public Integer getId() {
         return id;
@@ -59,14 +57,6 @@ public class Usuario {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getHashedPassword() {
@@ -100,7 +90,6 @@ public class Usuario {
     public void setNombreTipoUsuario(String nombreTipoUsuario) {
         this.nombreTipoUsuario = nombreTipoUsuario;
     }
-
 
     // </editor-fold>
 

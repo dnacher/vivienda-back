@@ -9,33 +9,34 @@ public class Tecnico {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column
+    @Column(name = "apellido")
     private String apellido;
 
-    @Column
+    @Column(name = "telefono")
     private String telefono;
 
-    @Column
+    @Column(name = "mail")
     private String mail;
 
-    @Column
+    @Column(name = "calificacion")
     private Integer calificacion;
 
-    @Column
+    @Column(name = "estado")
     private Integer estado;
 
-    @Column
+    @Column(name = "fecha_inicio_estado")
     private Date fechaInicioEstado;
 
-    @Column
+    @Column(name = "fecha_fin_estado")
     private Date fechaFinEstado;
 
-    @Column
+    @Column(name = "activo")
     private Boolean activo;
 
     public Tecnico(){}

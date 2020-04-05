@@ -7,6 +7,10 @@ import javax.persistence.*;
 public class PermisoUsuario {
 
     @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
+
     @ManyToOne(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinColumn(name = "tipo_usuario")
     private TipoUsuario tipoUsuario;
